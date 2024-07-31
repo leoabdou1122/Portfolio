@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Incosolata", Consolas, monospace;
+}
+:root{
+    --color-primary: #EDF7F6;
+    --color-secondary: #1A1A1A;    ;
+    --color-tertiary: #36383C;
+    --text-color-primary: #ffffff;
+    --text-color-secondary: #FFD700;
+}
+body{
+    background-color: var(--color-primary);
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    min-width: 1400px;
+}
+.head{
+    width: 100%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    width: 70%;
+}
+.navbar .logo{
+    color: var(--text-color-secondary);
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+}
+.home-component{
+    background-color: var(--color-secondary);
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--text-color-primary);
+    
+}
+.home .my-name{
+    font-size: 45px;
+    color: var(--text-color-primary);
+}
+.home .my-name .im{
+    font-size: 30px;
+}
+.home .my-name .name{
+    color: var(--text-color-secondary);
+    font-size: 45px;
+    position: relative;
+}
+.home .my-title{
+    font-size: 30px;
+}
+
+.home .my-cv button,
+.navbar .my-cv button{
+    background-color: var(--text-color-secondary);
+    color: var(--color-secondary);
+    width: 140px;
+    height: 35px;
+    border-radius: 7px;
+    border: 2px solid var(--color-secondary);
+    font-weight: 600;
+    cursor: pointer;
+}
+.about-component{
+    background-color: var(--color-secondary);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text-color-primary);
+}
+.about-component .about{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about-component .about .about-title{
+    text-align: center;
+    font-size: 40px;
+    color: var(--text-color-secondary);
+}
+.about-component .about .about-text{
+    text-align: center;
+    font-size: 20px;
+}
+.skills-component{
+    background-color: var(--color-secondary);
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text-color-primary);
+}
+.skills-component .skills{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.skills-component .skills h1{
+    color: var(--text-color-secondary);
+    text-align: center;
+}
+.skills .skills-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.skills-item{
+    background-color: var(--color-tertiary);
+    width: calc((100% - 120px)/4);
+    border-radius: 15px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills-item img{
+    width: 40%;
+}
